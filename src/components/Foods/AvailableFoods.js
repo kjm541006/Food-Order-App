@@ -33,7 +33,13 @@ const DUMMY = [
 export default function AvailableFoods() {
   const foodList = DUMMY.map((food) => {
     return (
-      <FoodItem key={food.id} name={food.name} price={food.price} description={food.description} />
+      <FoodItem
+        id={food.id}
+        key={food.id}
+        name={food.name}
+        price={food.price}
+        description={food.description}
+      />
     );
   });
 
