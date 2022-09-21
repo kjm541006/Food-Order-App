@@ -12,14 +12,16 @@ export default function Cart(props) {
     </ul>
   );
   return (
-    <Modal>
+    <Modal onClose={props.onCloseCart}>
       {cartItems}
       <div className={classes.total}>
         <span>총 금액</span>
         <span>35.62</span>
       </div>
       <div className={classes.actions}>
-        <button className={classes["button--alt"]}>닫기</button>
+        <button className={classes["button--alt"]} onClick={props.onCloseCart}>
+          닫기
+        </button>
         <button className={classes.button}>주문하기</button>
       </div>
     </Modal>

@@ -8,7 +8,7 @@ export default function Header(props) {
     <>
       <header className={styles.header}>
         <h1>요기용?</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={styles["main-image"]}>
         <img src={foodImg} alt="메인화면 배경 이미지" />
